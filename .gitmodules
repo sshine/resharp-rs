@@ -1,0 +1,6 @@
+[submodule "rebar"]
+	path = rebar
+	url = ./rebar
+[submodule "resharp-dotnet"]
+	path = resharp-dotnet
+	url = ./resharp-dotnet/
