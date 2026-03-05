@@ -1,0 +1,16 @@
+[package]
+name = "resharp"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "RE# regex engine with boolean operations"
+
+[lints]
+workspace = true
+
+[dependencies]
+resharp-ir.workspace = true
+resharp-parser.workspace = true
+resharp-syntax.workspace = true
+cstree.workspace = true

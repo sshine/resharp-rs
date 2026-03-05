@@ -1,0 +1,35 @@
+[workspace]
+resolver = "2"
+members = ["crates/*"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/sshine/resharp-rust"
+
+[workspace.lints.rust]
+unused_must_use = "deny"
+
+[workspace.lints.clippy]
+unwrap_used = "deny"
+
+[workspace.dependencies]
+# Internal crates
+resharp-syntax = { path = "crates/resharp-syntax" }
+resharp-ir = { path = "crates/resharp-ir" }
+resharp-parser = { path = "crates/resharp-parser" }
+
+# Syntax tree
+cstree = "0.12"
+
+# Error handling
+thiserror = "2"
+
+# Utilities
+bitflags = "2"
+
+# Testing
+insta = { version = "1", features = ["yaml"] }
+toml = "0.8"
+serde = { version = "1", features = ["derive"] }

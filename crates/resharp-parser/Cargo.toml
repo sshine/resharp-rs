@@ -1,0 +1,21 @@
+[package]
+name = "resharp-parser"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Parser for RE# extended regex patterns"
+
+[lints]
+workspace = true
+
+[dependencies]
+resharp-syntax.workspace = true
+resharp-ir.workspace = true
+cstree.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+insta.workspace = true
+toml.workspace = true
+serde.workspace = true
